@@ -1,21 +1,9 @@
-how many numbers?
-enter number:
-list is: 10
-enter number:
-list is: 20
-10
-enter number:
-list is: 30
-20
-10
-enter number:
-list is: 40
-30
-20
-10
-enter number:
-list is: 50
-40
-30
-20
-10
+how many numbers:
+enter number and position:
+list is:10 
+enter number and position:
+list is:20 10 
+enter number and position:
+list is:20 30 10 
+enter number and position:
+list is:20 30 50 10 
