@@ -27,36 +27,25 @@ void insert(int x,int n)
 	temp2->link=temp1;
 
 }
-void print()
+void print(node *head)
 {
-    node *temp=head;
-	cout<<"list is:";
-	while(temp!=NULL)
-	{
-		cout<<temp->data<<" ";
-		temp=temp->link;
-	}
+	if(head==NULL)
+		return;
+    cout<<head->data<<" ";
+    print(head->link);
 	cout<<"\n";
 }
-void reverse()
+void reverseprint(node *temp)
 {
-	struct node *prev,*current,*link;
-	current=head;
-	prev=NULL;
-	while(current!=NULL)
-	{
-		link=current->link;
-		current->link =prev;
-		prev=current;
-		current=link;
-	}
-	head=prev;
+	if(temp==NULL)
+		return;	
+	reverseprint(temp->link);
+    cout<<temp->data<<" ";
 
 }
 
 int main() 
 {
-	head=NULL;
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 
@@ -79,10 +68,7 @@ int main()
 		insert(x,n);
 
 	}
-	print();
-	reverse();
-	cout<<"after reversing ll:\n";
-	print();
-
+	print(head);
+	reverseprint(head);
 	return 0;
 }	

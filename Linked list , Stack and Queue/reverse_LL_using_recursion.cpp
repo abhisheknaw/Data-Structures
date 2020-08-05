@@ -27,36 +27,31 @@ void insert(int x,int n)
 	temp2->link=temp1;
 
 }
-void print()
+void reverse(node *p)
 {
-    node *temp=head;
-	cout<<"list is:";
-	while(temp!=NULL)
+	if(p->link==NULL)
 	{
-		cout<<temp->data<<" ";
-		temp=temp->link;
+		head=p;
+		return;
 	}
-	cout<<"\n";
-}
-void reverse()
-{
-	struct node *prev,*current,*link;
-	current=head;
-	prev=NULL;
-	while(current!=NULL)
-	{
-		link=current->link;
-		current->link =prev;
-		prev=current;
-		current=link;
-	}
-	head=prev;
+	reverse(p->link);
+	struct node*q=p->link;
+	q->link=p;
+	p->link=NULL;
 
+}
+void print(node *head)
+{
+	if(head==NULL)
+		return;
+    cout<<head->data<<" ";
+    print(head->link);
+	cout<<"\n";
 }
 
 int main() 
 {
-	head=NULL;
+
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 
@@ -66,7 +61,6 @@ int main()
 	// for writing output to output.txt
 	freopen("output.txt", "w", stdout);
 #endif
-
 	head=NULL;
 	int i,y,x,n;
 	cout<<"how many numbers:\n";
@@ -77,12 +71,11 @@ int main()
 		cin>>x;
 		cin>>n;
 		insert(x,n);
-
 	}
-	print();
-	reverse();
-	cout<<"after reversing ll:\n";
-	print();
-
+	cout<<"list is:\n";
+	print(head);
+	reverse(head);
+	cout<<"after reversing:\n";
+	print(head);
 	return 0;
-}	
+}

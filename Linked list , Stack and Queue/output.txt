@@ -3,6 +3,13 @@ enter number and position:
 enter number and position:
 enter number and position:
 enter number and position:
-list is:20 30 50 10 
-after reversing ll:
-list is:10 50 30 20 
+list is:
+1 2 3 5 
+
+
+
+after reversing:
+5 3 2 1 
+
+
+
