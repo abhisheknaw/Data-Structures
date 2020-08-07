@@ -1,15 +1,7 @@
-how many numbers:
-enter number and position:
-enter number and position:
-enter number and position:
-enter number and position:
-list is:
-1 2 3 5 
-
-
-
-after reversing:
-5 3 2 1 
-
-
-
+1. push
+2. pop
+3. display
+enter your choice:
+enter the number:
+stack is:
+10
