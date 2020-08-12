@@ -1,7 +1,2 @@
-1. push
-2. pop
-3. display
-enter your choice:
-enter the number:
-stack is:
-10
+Enter Postfix Expression 
+Output = 757
