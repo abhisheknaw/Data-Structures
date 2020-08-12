@@ -1,2 +1,2 @@
-Enter Postfix Expression 
-Output = 757
+stack is:
+30 20 

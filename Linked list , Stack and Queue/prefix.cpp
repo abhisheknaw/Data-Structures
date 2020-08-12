@@ -24,14 +24,15 @@ int EvaluatePostfix(string expression)
   int i,num=-1;             // Variable declarations
   stack<int> temp_stack;
 
-  for(i=0;i<expression.length();i++)
+  for(i=expression.length()-1;i>=0;i--)
   { // Iterate over characters
 
     int mychar=expression[i];
 
     if(mychar==',' || mychar==' ')
     {  // Delimiter comma handling
-      if(num!=(-1)){
+      if(num!=(-1))
+      {
         temp_stack.push(num);
         num=-1;
       }
@@ -54,12 +55,12 @@ int EvaluatePostfix(string expression)
       // Main Algorithm for the evaluation of result
       if(temp_stack.empty()) 
         return -1;
-      int operand2=temp_stack.top();
+      int operand1=temp_stack.top();
       temp_stack.pop();
 
       if(temp_stack.empty()) 
         return -1;
-      int operand1=temp_stack.top();
+      int operand2=temp_stack.top();
       temp_stack.pop();
 
       // Pop two previous elements from the stack and push their result onto stack again.
