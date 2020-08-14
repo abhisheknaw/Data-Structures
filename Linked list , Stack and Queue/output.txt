@@ -1,2 +1,2 @@
-stack is:
-30 20 
+enter string:
+output: 12+3*4-5*
