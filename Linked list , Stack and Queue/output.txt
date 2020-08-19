@@ -1,2 +1,6 @@
 enter number to be searched:
-not found
+found
+min element is:
+7
+max element is:
+27
