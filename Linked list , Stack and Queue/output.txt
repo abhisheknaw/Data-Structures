@@ -1,6 +1,4 @@
 enter number to be searched:
 found
-min element is:
-7
-max element is:
-27
+height is:
+2
