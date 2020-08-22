@@ -1,4 +1,3 @@
-enter number to be searched:
-found
-height is:
-2
+15 10 7 13 25 20 27 
+7 10 13 15 20 25 27 
+7 13 10 20 27 25 15 
