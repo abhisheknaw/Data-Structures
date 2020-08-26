@@ -61,7 +61,7 @@ int main()
 	root=insert(root,25);
 	root=insert(root,10);
 	root=insert(root,13);
-	root=insert(root,7);
+	root=insert(root,7); 
 	root=insert(root,20);
 	root=insert(root,27);
 	if(isbinarysearchtree(root))
