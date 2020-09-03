@@ -1,2 +1,2 @@
-10 5 15 1 7 13 20 
-13 5 15 1 7 20 
+enter number to be searched:
+found
